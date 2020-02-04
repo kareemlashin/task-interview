@@ -5,7 +5,6 @@ $ColorFontThird:#ffb606;
 $fontUse: 'Raleway',
 sans-serif;
 
-
 * {
     font-family: $fontUse;
 }
@@ -266,7 +265,13 @@ nav {
     }
 }
 
+#event,
 #aboutus {
+    overflow-x: hidden;
+}
+
+#aboutus {
+
     span {
         color: $ColorFontThird;
         font-weight: 700;

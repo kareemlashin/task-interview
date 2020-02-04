@@ -81,8 +81,7 @@ nav a:hover {
   position: relative;
 }
 
-.slide .carousel-control-next-icon,
-.slide .carousel-control-prev-icon {
+.slide .carousel-control-next-icon, .slide .carousel-control-prev-icon {
   background-image: url() !important;
 }
 
@@ -102,16 +101,14 @@ nav a:hover {
   color: #ffb606;
 }
 
-.slide .carousel-inner .overly h1,
-.slide .carousel-inner .overly p {
+.slide .carousel-inner .overly h1, .slide .carousel-inner .overly p {
   color: #fff;
   font-size: 55px;
   font-weight: 800;
 }
 
 @media (max-width: 800px) {
-  .slide .carousel-inner .overly h1,
-  .slide .carousel-inner .overly p {
+  .slide .carousel-inner .overly h1, .slide .carousel-inner .overly p {
     font-size: 25px;
     font-weight: 800;
   }
@@ -136,16 +133,12 @@ nav a:hover {
   width: 100%;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-control-prev, .carousel-control-next {
   opacity: 1 !important;
   position: absolute;
 }
 
-.carousel-control-prev .carousel-control-prev-icon,
-.carousel-control-prev .carousel-control-next-icon,
-.carousel-control-next .carousel-control-prev-icon,
-.carousel-control-next .carousel-control-next-icon {
+.carousel-control-prev .carousel-control-prev-icon, .carousel-control-prev .carousel-control-next-icon, .carousel-control-next .carousel-control-prev-icon, .carousel-control-next .carousel-control-next-icon {
   padding: 20px;
   background-color: #ffb606;
   display: flex;
@@ -155,10 +148,7 @@ nav a:hover {
   border-radius: 50%;
 }
 
-.carousel-control-prev .carousel-control-prev-icon i,
-.carousel-control-prev .carousel-control-next-icon i,
-.carousel-control-next .carousel-control-prev-icon i,
-.carousel-control-next .carousel-control-next-icon i {
+.carousel-control-prev .carousel-control-prev-icon i, .carousel-control-prev .carousel-control-next-icon i, .carousel-control-next .carousel-control-prev-icon i, .carousel-control-next .carousel-control-next-icon i {
   color: #fff !important;
 }
 
@@ -208,6 +198,10 @@ nav a:hover {
   }
 }
 
+#event, #aboutus, #instructor, #contact {
+  overflow-x: hidden;
+}
+
 #aboutus span {
   color: #ffb606;
   font-weight: 700;
@@ -221,8 +215,7 @@ nav a:hover {
   color: #777777;
 }
 
-#countUp i,
-#countUp span {
+#countUp i, #countUp span {
   color: #ffb606;
   font-size: 40px;
 }
@@ -354,8 +347,7 @@ nav a:hover {
   cursor: pointer;
 }
 
-#registerForm input,
-#registerForm textarea {
+#registerForm input, #registerForm textarea {
   border: none;
   border-bottom: 2px solid #ffb606;
   outline: none;
@@ -368,8 +360,7 @@ nav a:hover {
   display: none;
 }
 
-#registerForm input::placeholder,
-#registerForm textarea::placeholder {
+#registerForm input::placeholder, #registerForm textarea::placeholder {
   color: #ffb606;
 }
 
@@ -518,29 +509,84 @@ body {
   right: 0;
 }
 
-#load .lds-dual-ring {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
+.sk-cube-grid {
+  width: 40px;
+  height: 40px;
+  margin: 100px auto;
 }
 
-#load .lds-dual-ring:after {
-  content: " ";
-  display: block;
-  width: 64px;
-  height: 64px;
-  margin: 8px;
-  border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
-  animation: lds-dual-ring 1.2s linear infinite;
+.sk-cube-grid .sk-cube {
+  width: 33%;
+  height: 33%;
+  background-color: #fff;
+  float: left;
+  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
 
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
+.sk-cube-grid .sk-cube1 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube2 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube3 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.sk-cube-grid .sk-cube4 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube5 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+.sk-cube-grid .sk-cube6 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+.sk-cube-grid .sk-cube7 {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.sk-cube-grid .sk-cube8 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+.sk-cube-grid .sk-cube9 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+@-webkit-keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
   }
-  100% {
-    transform: rotate(360deg);
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
+  }
+}
+
+@keyframes sk-cubeGridScaleDelay {
+  0%, 70%, 100% {
+    -webkit-transform: scale3D(1, 1, 1);
+    transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0, 0, 1);
+    transform: scale3D(0, 0, 1);
   }
 }
